@@ -25,8 +25,7 @@ end
 
 post '/note/update' do
   puts params
-  Note.update(:id => params[:note][:id].to_i, :title => params[:note][:title], :content => params[:note][:content])
+  Note.update(params[:note][:id].to_i, :title => params[:note][:title], :content => params[:note][:content])
   @note = Note.find_by_id(params[:note][:id])
-
   erb :show
 end
