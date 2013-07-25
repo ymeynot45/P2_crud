@@ -1,4 +1,4 @@
-.container {
+.container, .container2{
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
@@ -6,4 +6,20 @@
 }
 th {
   text-align: left;
+}
+
+.top_navbar {
+  width: 100%;
+  min-height: 70px;
+  height: 10%;
+  background-color: gray;
+  border-bottom: 2px black solid;
+  padding: 0;
+  margin: 0;
+}
+
+.top_navbar h2 {
+  margin: 0;
+  float: left;
+  line-height: 30px;
 }

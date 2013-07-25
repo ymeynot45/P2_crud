@@ -1,0 +1,18 @@
+<div class="container">
+  <h2><%= @note.title%></h2>
+
+  <p><%= @note.content%></p>
+</div>
+
+<div class="container2">
+  <h3>Update this note!</h3>
+  <h4>This will replace all of the content.</h3>
+
+  <form action="/note/update" method="post" id="update_post">
+    <input type="hidden" name="note[id]" value="<%=@note.id%>">
+    <input type="hidden" name="note[title]" value="<%=@note.title%>">
+    Content: <br>
+    <textarea maxlength="350" form="update_note" cols="50" rows="5" name="note[content]" placeholder="No swearing please!"></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
