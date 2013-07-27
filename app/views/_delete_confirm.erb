@@ -1,0 +1,10 @@
+
+<div class="container2">
+  
+  <h2> Are you sure you want to delete this note?</h2>
+
+  <form action="/delete/<%=@notes.first.id%>" method="post">
+    <input type="submit" name='response' value="Delete">
+    <input type="submit" name='response' value="Nevermind">
+  </form>
+</div>
